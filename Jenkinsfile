@@ -7,7 +7,7 @@ pipeline {
 	        }
         	
         }
-	stage('Install dependencies') {
+	      stage('Run test') {
         	steps {
 	          		bat "newman run UserAPIs.postman_collection.json"
 	        }
