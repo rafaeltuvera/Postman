@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+    stages {
+        stage('Install dependencies') {
+        	steps {
+	          		bat "npm i newman -g"
+	        }
+        	
+        }
+	stage('Install dependencies') {
+        	steps {
+	          		bat "newman run UserAPIs.postman_collection.json"
+	        }
+        	
+        }
+    }
+}
