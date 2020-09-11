@@ -9,6 +9,6 @@ pipeline {
         }
     }
 	tools {
-      maven 'NPM_HOME'
+      nodejs 'NPM_HOME'
   }
 }
