@@ -9,6 +9,6 @@ pipeline {
         }
     }
 	tools {
-      nodejs 'NPM_HOME'
+      nodejs 'node'
   }
 }
